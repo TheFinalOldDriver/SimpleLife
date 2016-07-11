@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.slash.simplelife.ui.activity.LoginActivity">
+
+    <com.slash.simplelife.view.CustomVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.slash.simplelife.view.login.MaterialLoginView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:loginActionText="@string/login"
+        app:loginHint="@string/name"
+        app:loginPasswordHint="@string/password"
+        app:loginTextColor="@color/material_login_register_color"
+        app:loginTitle="@string/app_name"
+        app:registerActionText="@string/register"
+        app:registerEnabled="true"
+        app:registerHint="@string/name"
+        app:registerIcon="@drawable/ic_person_add_white_24dp"
+        app:registerPasswordHint="@string/password"
+        app:registerRepeatPasswordHint="@string/repeat_password"
+        app:registerTextColor="@color/white"
+        app:registerTitle="Join us" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/welcome_button"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="返回>>"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</FrameLayout>

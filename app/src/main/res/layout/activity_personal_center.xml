@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.slash.simplelife.ui.activity.PersonalCenterActivity">
+    <include
+        android:id="@+id/toolbar" layout="@layout/common_toolbar"/>
+    <com.slash.simplelife.view.PullToZoomScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Scrollview的内层不能有多个child，这里嵌套一层布局 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <include
+                layout="@layout/bookdetail_halftop"/>
+            <include
+                layout="@layout/personal_center_halfdown"/>
+        </LinearLayout>
+    </com.slash.simplelife.view.PullToZoomScrollView>
+
+    <!--<FrameLayout
+        android:layout_below="@+id/scrollView"
+        android:id="@+id/edit_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_below="@+id/edit_nickname"
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <com.github.clans.fab.FloatingActionMenu
+        style="@style/FabMenu"
+        android:id="@+id/main_fab_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        app:menu_colorNormal="@color/purple"
+        app:menu_colorPressed="@color/md_deep_purple_500"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_singleLine="true" >
+
+        <com.github.clans.fab.FloatingActionButton
+            style="@style/FabMenu.Buttons"
+            android:id="@+id/main_fab_bgimg"
+            android:src="@mipmap/personal_bgimg"
+            app:fab_label="@string/select_bgimg" />
+        <com.github.clans.fab.FloatingActionButton
+            style="@style/FabMenu.Buttons"
+            android:id="@+id/main_fab_edit_nickname"
+            android:src="@mipmap/personal_name"
+            app:fab_label="@string/edit_nickname" />
+        <com.github.clans.fab.FloatingActionButton
+            style="@style/FabMenu.Buttons"
+            android:id="@+id/main_fab_editintro"
+            android:src="@mipmap/personal_content"
+            app:fab_label="@string/say_something" />
+        <!--<com.github.clans.fab.FloatingActionButton
+            style="@style/FabMenu.Buttons"
+            android:id="@+id/main_fab_select_img"
+            android:src="@mipmap/personal_header"
+            app:fab_label="@string/select_img" />-->
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

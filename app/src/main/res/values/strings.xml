@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SimpleLife</string>
+    <string name="app_title">生活不仅仅是诗和远方</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+        sanctus est Lorem ipsum dolor sit amet.</string>
+    <string name="drawer_item_home">主页</string>
+    <string name="drawer_item_movie">电影</string>
+    <string name="drawer_item_book">图书</string>
+    <string name="drawer_item_action">活动</string>
+    <string name="drawer_item_others">Others</string>
+    <string name="drawer_item_settings">设置</string>
+    <string name="drawer_item_help">帮助</string>
+</resources>
